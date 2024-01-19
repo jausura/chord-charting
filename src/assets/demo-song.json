@@ -1,0 +1,72 @@
+[
+  {
+    "id": "22beda99-1aaa-4538-8bd3-46e581bef2b5",
+    "title": "Verse",
+    "cards": [
+      {
+        "id": "ec8e13e3-b71b-4a7d-92ed-8357b2eae079",
+        "chordTones": "e, b, f#, g#",
+        "chordName": "E Major add 9"
+      },
+      {
+        "id": "c4bc3ca8-2141-410f-8c4b-96e73c13e09f",
+        "chordTones": "a, e, b, c#",
+        "chordName": "A major add 9"
+      },
+      {
+        "id": "0611cae7-e0bb-4876-a63b-9786fdb33e7a",
+        "chordTones": "c,e,g, d",
+        "chordName": "CMajor add 9"
+      }
+    ],
+    "notes": {
+      "blocks": [
+        {
+          "key": "b905f",
+          "text": "Most of the song is in E major, but the C major 9 chord is a chromatic mediant",
+          "type": "unordered-list-item",
+          "depth": 0,
+          "inlineStyleRanges": [],
+          "entityRanges": [],
+          "data": {}
+        }
+      ],
+      "entityMap": {}
+    }
+  },
+  {
+    "id": "e12b09b0-8d9e-40d2-9d94-02ea880c36c2",
+    "title": "Chorus",
+    "cards": [
+      {
+        "id": "79f298a3-101a-4de9-97c6-751d3e08dc98",
+        "chordTones": "e, b, f#, g#",
+        "chordName": "E Major add 9"
+      },
+      {
+        "id": "aa0a0b30-8cae-404e-8080-8aa609a433b4",
+        "chordTones": "c,e,g, d",
+        "chordName": "CMajor add 9"
+      },
+      {
+        "id": "397629a8-8d3f-4b58-a538-686f4a751a07",
+        "chordTones": "a, e, b, c#",
+        "chordName": "A major add 9"
+      }
+    ],
+    "notes": {
+      "blocks": [
+        {
+          "key": "7qavf",
+          "text": "Second time through this repeats with a different bass line",
+          "type": "unstyled",
+          "depth": 0,
+          "inlineStyleRanges": [],
+          "entityRanges": [],
+          "data": {}
+        }
+      ],
+      "entityMap": {}
+    }
+  }
+]
