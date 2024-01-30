@@ -1,10 +1,9 @@
 import { useEffect, useState } from "react";
 import Section from "./Section";
-import { useLocation, useParams } from "react-router-dom";
+import { Link, useLocation } from "react-router-dom";
 import DEMO_SONG from "../assets/demo-song.json";
 
 export default function Song() {
-  //const { songId } = useParams();
   const location = useLocation();
 
   const DEFAULT_CHORD = {
@@ -19,8 +18,6 @@ export default function Song() {
   };
   const LOCAL_STORAGE_KEY = location.state.songId;
 
-  //const [sections, setSections] = useState([DEFAULT_SECTION_DATA]);
-
   const [sections, setSections] = useState(() => {
     const localValue = localStorage.getItem(LOCAL_STORAGE_KEY);
     if (localValue == null && location.state.songName === "Demo Song") {
@@ -34,7 +31,7 @@ export default function Song() {
 
   useEffect(() => {
     localStorage.setItem(LOCAL_STORAGE_KEY, JSON.stringify(sections));
-  }, [sections]);
+  }, [sections, LOCAL_STORAGE_KEY]);
 
   function getSectionCards(sectionId) {
     return sections.find(({ id }) => id === sectionId).cards;
@@ -111,6 +108,9 @@ export default function Song() {
 
   return (
     <>
+      <nav className="main-nav">
+        <Link to="/">All Songs</Link>
+      </nav>
       <h1>{location.state.songName}</h1>
 
       {sections.map((section) => (

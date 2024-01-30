@@ -39,24 +39,31 @@ export default function Songs() {
 
   return (
     <>
-      <ul>
-        {songs.map((song) => {
-          return (
-            <li key={song.songId}>
-              <Link to={song.songId} state={{ ...song }}>
-                {song.songName}
-              </Link>
-              <button onClick={() => deleteSong(song.songId)}>
-                delete song
-              </button>
-            </li>
-          );
-        })}
-      </ul>
-      <form onSubmit={(e) => createSong(e)}>
-        <input ref={newSongName} />
-        <button>create new song</button>
-      </form>
+      <div className="all-songs">
+        <h1>Your Songs</h1>
+        <ul className="all-songs-list">
+          {songs.map((song) => {
+            return (
+              <li key={song.songId} className="all-songs-item">
+                <Link
+                  className="all-songs-link"
+                  to={song.songId}
+                  state={{ ...song }}
+                >
+                  {song.songName}
+                </Link>
+                <button onClick={() => deleteSong(song.songId)}>
+                  delete song
+                </button>
+              </li>
+            );
+          })}
+        </ul>
+        <form onSubmit={(e) => createSong(e)}>
+          <input className="new-song-input" ref={newSongName} />
+          <button>create new song</button>
+        </form>
+      </div>
     </>
   );
 }

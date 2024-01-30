@@ -1,4 +1,4 @@
-import { Link, Outlet, createBrowserRouter } from "react-router-dom";
+import { Outlet, createBrowserRouter } from "react-router-dom";
 import Song from "./components/Song";
 import Songs from "./components/Songs";
 
@@ -16,9 +16,6 @@ function MainLayout() {
   return (
     <>
       <div className="container">
-        <nav className="main-nav">
-          <Link to="/">All Songs</Link>
-        </nav>
         <Outlet />
       </div>
     </>
