@@ -59,7 +59,7 @@ export default function Songs() {
             );
           })}
         </ul>
-        <form onSubmit={(e) => createSong(e)}>
+        <form className="new-song-form" onSubmit={(e) => createSong(e)}>
           <input className="new-song-input" ref={newSongName} />
           <button>create new song</button>
         </form>
